@@ -1,0 +1,64 @@
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background: #353638;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.stopwatch {
+  &-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    background: rgba(105, 105, 105, 0);
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.svg_icon {
+  &:hover {
+    path {
+      fill: white;
+    }
+  }
+  &.active {
+    path {
+      fill: white;
+    }
+  }
+}

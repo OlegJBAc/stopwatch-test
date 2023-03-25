@@ -1,0 +1,86 @@
+
+.stopwatch {
+  background: #696969;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #9E9E9E;
+  width: 225px;
+  height: 120px;
+  margin: 0 20px 20px 20px;
+  position: relative;
+  &__close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    &:hover {
+      cursor: pointer;
+      fill: white;
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    &.active {
+      color: #ffffff;
+      .stopwatch__time {
+        border-bottom: 1px solid #ffffff;
+      }
+      img {
+        svg{
+          fill: white;
+        }
+
+      }
+    }
+  }
+
+  &__time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #9E9E9E;
+    padding-bottom: 20px;
+    font-size: 22px;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+
+
+
+#clear-app-data {
+  button {
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    padding: 0;
+    height: 50px;
+    margin-top: 5px;
+    &:after {
+      content: '';
+      height: 1px;
+      width: 0;
+      background: white;
+      transition-duration: 0.3s;
+      margin-top: 5px;
+    }
+    &:hover {
+      &:after{
+        width: 100%;
+      }
+    }
+  }
+}
